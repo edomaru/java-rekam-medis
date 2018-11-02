@@ -45,10 +45,11 @@ public class Main extends javax.swing.JFrame {
         sbLogout = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         smExit = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        smPegawai = new javax.swing.JMenu();
         smPasien = new javax.swing.JMenuItem();
         smDokter = new javax.swing.JMenuItem();
         smObat = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         smPetugas = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
@@ -91,17 +92,20 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Master");
+        smPegawai.setText("Master");
 
         smPasien.setText("Pasien");
-        jMenu2.add(smPasien);
+        smPegawai.add(smPasien);
 
         smDokter.setText("Dokter");
-        jMenu2.add(smDokter);
+        smPegawai.add(smDokter);
 
         smObat.setText("Obat");
-        jMenu2.add(smObat);
-        jMenu2.add(jSeparator2);
+        smPegawai.add(smObat);
+
+        jMenuItem1.setText("Pegawai");
+        smPegawai.add(jMenuItem1);
+        smPegawai.add(jSeparator2);
 
         smPetugas.setText("Pengguna");
         smPetugas.addActionListener(new java.awt.event.ActionListener() {
@@ -109,9 +113,9 @@ public class Main extends javax.swing.JFrame {
                 smPetugasActionPerformed(evt);
             }
         });
-        jMenu2.add(smPetugas);
+        smPegawai.add(smPetugas);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(smPegawai);
 
         jMenu3.setText("Transaksi");
 
@@ -228,10 +232,10 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem17;
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JPopupMenu.Separator jSeparator1;
@@ -250,6 +254,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem smLapResep;
     private javax.swing.JMenuItem smObat;
     private javax.swing.JMenuItem smPasien;
+    private javax.swing.JMenu smPegawai;
     private javax.swing.JMenuItem smPembayaran;
     private javax.swing.JMenuItem smPemeriksaan;
     private javax.swing.JMenuItem smPendaftaran;

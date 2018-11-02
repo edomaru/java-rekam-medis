@@ -36,7 +36,7 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="smPegawai">
           <Properties>
             <Property name="text" type="java.lang.String" value="Master"/>
           </Properties>
@@ -54,6 +54,11 @@
             <MenuItem class="javax.swing.JMenuItem" name="smObat">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Obat"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pegawai"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
